@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 name: Dylan Van Assche
-email: me@dylanvanassche.be
+email: dylan.vanassche@ugent.be
+pgp: true
 description: > # this means to ignore newlines until "url:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
-  Copyright © Dylan Van Assche (2020)
+footer_text: All rights reserved.
 
 url: https://dylanvanassche.be # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -26,21 +26,21 @@ og_image: ./assets/img/avatar.png # The site-wide (default for all links) Open G
 github_username: DylanVanAssche # your GitHub user name
 twitter_username: DylanVanAssche # your Twitter handle
 linkedin_username: DylanVanAssche # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
-orcid_id: # your ORCID ID
+scholar_userid: YMOCS-AAAAAJ # Google Scholar ID
+orcid_id: 0000-0002-7195-9935 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
 research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
 
-contact_note: # Not needed
+contact_note: # not needed
 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 blog_name: Dylan's blog
-blog_description: Blog post about my research, my life and the universe
+blog_description: A blog about my research, my life and the universe
 
 # Pagination
 paginate: 4
