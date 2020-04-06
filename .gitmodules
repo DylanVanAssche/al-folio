@@ -1,0 +1,9 @@
+[submodule "assets/js/anchorjs"]
+	path = assets/js/lib/anchorjs
+	url = git@github.com:bryanbraun/anchorjs.git
+[submodule "assets/js/jquery"]
+	path = assets/js/lib/jquery
+	url = https://github.com/jquery/jquery.git
+[submodule "assets/js/KaTeX"]
+	path = assets/js/lib/KaTeX
+	url = https://github.com/KaTeX/KaTeX.git
