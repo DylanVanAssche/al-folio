@@ -3,9 +3,7 @@
   <div class="wrapper">
 
     {% if page.layout != "about" %}
-    <span class="site-title">
-        {{ site.name }}
-    </span>
+      <a class="site-title" href={{ site.url }}>{{ site.name }}</a>
     {% endif %}
 
     <nav class="site-nav">
