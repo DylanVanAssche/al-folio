@@ -7,11 +7,14 @@ layout: page
     {% if page.profile.image %}
       <img class="one" src="{{ page.profile.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
     {% endif %}
-    {% if page.profile.address %}
-      <div class="address">
-        {{ page.profile.address }}
-      </div>
-    {% endif %}
+    <div class="address">
+      {% if site.workplace.name %}
+        {{ site.workplace.name }}
+      {% endif %}
+      {% if site.workplace.address %}
+        {{ site.workplace.address }}
+      {% endif %}
+    </div>
   </div>
 {% endif %}
 

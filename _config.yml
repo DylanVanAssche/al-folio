@@ -2,10 +2,28 @@
 # Site settings
 # -----------------------------------------------------------------------------
 name: Dylan Van Assche
+first_name: Dylan
+last_name: Van Assche
+workplace: 
+  name: IDLab Ghent
+  address: >
+    Technologiepark-Zwijnaarde 122<br>
+    9052 Zwijnaarde<br>
+    Belgium
+  address_uri: https://data.vlaanderen.be/doc/adres/20470097
+role: Semantic Web PhD Researcher
 email: dylan.vanassche@ugent.be
 pgp: true
+knows:
+  - "https://pietercolpaert.be/#me"
+  - "https://ruben.verborgh.org/profile/#me"
+  - "https://sven-lieber.org/profile#me"
+  - "https://pieterheyvaert.com/#me"
+  - "http://www.rubensworks.net/#me"
+  - "http://ben.de-meester.org/#me"
+  - "https://brechtvdv.github.io/#me"
 description: > # this means to ignore newlines until "url:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  My portfolio website with a blog, list of publications and the projects I work on.
 footer_text: All rights reserved.
 
 url: https://dylanvanassche.be # the base hostname & protocol for your site
@@ -28,6 +46,7 @@ twitter_username: DylanVanAssche # your Twitter handle
 linkedin_username: DylanVanAssche # your LinkedIn user name
 scholar_userid: YMOCS-AAAAAJ # Google Scholar ID
 orcid_id: 0000-0002-7195-9935 # your ORCID ID
+ugent_id: 802003231853 # UGent bib ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -96,7 +115,6 @@ plugins:
 
 # Jekyll-Scholar
 scholar:
-
   last_name: Van Assche
 
   style: apa

@@ -1,0 +1,84 @@
+<script type="application/ld+json">
+    {
+        "@context": {
+          "foaf": "http://xmlns.com/foaf/0.1/",
+          "vcard": "http://www.w3.org/2006/vcard/ns#",
+          "owl": "http://www.w3.org/2002/07/owl#",
+          "dbo": "http://dbpedia.org/ontology#",
+        },
+        "@graph": [{
+          "@id": "{{ site.url }}#me",
+          "@type": "foaf:Person",
+          "owl:sameAs": "https://w3id.org/people/dylanvanassche#me",
+          "owl:sameAs": "https://orcid.org/{{ site.orcid_id }}",
+          "owl:sameAs": "https://biblio.ugent.be/person/{{ site.ugent_id }}",
+          "dbo:orcidId": "{{ site.orcid_id }}",
+          "vcard:title": "{{ site.role }}",
+          "vcard:fn": [
+            {
+                "@value": "{{ site.name }}",
+                "@language": "en"
+            },
+            {
+                "@value": "{{ site.name }}",
+                "@language": "nl"
+            }
+          ],
+          "vcard:given-name": [
+            {
+                "@value": "{{ site.name | split:" " | first }}",
+                "@language": "en"
+            },
+            {
+                "@value": "{{ site.name | split:" " | first }}",
+                "@language": "nl"
+            }
+          ],
+          "vcard:family-name": [
+            {
+                "@value": "{{ site.name | split:" " | shift | join: " " }}",
+                "@language": "en"
+            },
+            {
+                "@value": "{{ site.name | split:" " | shift | join: " " }}",
+                "@language": "nl"
+            }
+          ],
+          "vcard:hasPhoto": "{{ site.url }}/img/avatar.png",
+          "vcard:hasEmail": "mailto:{{ site.email }}",
+          "vcard:hasAddress": "{{ site.workplace.address_uri }}",
+          "vcard:role": "{{ site.role }}",
+          "vcard:organization-name": "{{ site.workplace.name }}",
+          "foaf:name": [{
+            "@value": "{{ site.name }}",
+            "@language": "en"
+          },
+          {
+            "@value": "{{ site.name }}",
+            "@language": "nl"
+          }],
+          "foaf:givenName": [{
+            "@value": "{{ site.name | split:" " | first }}",
+            "@language": "en"
+          },
+          {
+            "@value": "{{ site.name | split:" " | first }}",
+            "@language": "nl"
+          }],
+          "foaf:familyName": [{
+            "@value": "{{ site.name | split:" " | shift | join: " " }}",
+            "@language": "en"
+          },
+          {
+            "@value": "{{ site.name | split:" " | shift | join: " " }}",
+            "@language": "nl"
+          }],
+          "foaf:mbox": "mailto:{{ site.email }}",
+          "foaf:img": "{{ site.url }}/img/avatar.png",
+          "foaf:knows": [
+            {% for person in site.knows %}"{{ person }}"{% if forloop.last == false %},{% endif %}
+            {% endfor %}]
+          }
+        ]
+    }
+</script>

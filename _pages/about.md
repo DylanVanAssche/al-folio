@@ -1,23 +1,25 @@
 ---
 layout: about
 permalink: /
-title: <strong>Your</strong> Name
-description: <a href="">Affiliations</a>. Address. Contacts. Moto. Etc.
+title: Dylan Van Assche
+description: Semantic Web PhD Researcher
 
 profile:
   align: right
-  image: prof_pic.jpg
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-news: true
+  image: avatar.png
+news: false
 social: true
+webid: webid.html
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My name is Dylan Van Assche, I'm a PhD researcher in Computer Science at IDLab Ghent.
+My research focuses on Knowledge Graph generation and Linked Open Data to decentralize the Web once again! 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Besides my research, I spent my free time programming applications and tools, 3D printing and working on my modelrailroad.
+I'm also advocating for publishing everything as Open Source since we can always learn from each other by sharing your ideas and tricks.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+If you want to follow my latest work, checkout my [blog]({{ site.baseurl }}/blog) {% if site.twitter_username %}or follow me on <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Twitter">Twitter</a>{% endif %}!
+
+{% if page.webid %}
+  {% include {{ page.webid }} %}
+{% endif %}
