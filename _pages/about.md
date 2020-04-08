@@ -12,7 +12,7 @@ social: true
 webid: webid.html
 ---
 
-My name is Dylan Van Assche, I'm a PhD researcher in Computer Science at IDLab Ghent.
+My name is Dylan Van Assche, I'm a PhD researcher in Computer Science at [IDLab Ghent](https://idlab.technology).
 My research focuses on Knowledge Graph generation and Linked Open Data to decentralize the Web once again! 
 
 Besides my research, I spent my free time programming applications and tools, 3D printing and working on my modelrailroad.
