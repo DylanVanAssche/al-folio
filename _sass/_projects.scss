@@ -1,6 +1,9 @@
 .project-grid { 
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%; /* 2 cards side-by-side on desktop */
+    @include media-query($on-palm) { /* Single cards on mobile */
+        grid-template-columns: 100%;
+    }
     grid-gap: 20px;
     align-items: stretch;
 
