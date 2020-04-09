@@ -13,9 +13,9 @@ description: Current and past projects I have been involved in.
             <h1>{{ project.title }}</h1>
             <p>{{ project.description }}</p>
             {% if project.redirect %}
-                <button onclick="window.open('{{ project.redirect }}', '_blank')" type="button">Read more</button>
+                <button onclick="window.open('{{ project.redirect }}', '_blank')" type="button">{{ project.button }}</button>
             {% else %}
-                <button onclick="window.location='{{ project.url | prepend: site.baseurl | prepend: site.url }}'" type="button">Read more</button>
+                <button onclick="window.location='{{ project.url | prepend: site.baseurl | prepend: site.url }}'" type="button">{{ project.button }}</button>
             {% endif %}
         </div>
     </article>
